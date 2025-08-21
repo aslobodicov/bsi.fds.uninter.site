@@ -1,0 +1,72 @@
+body {
+    background-color: #fff9ef;
+}
+
+h1 {
+    color: #796b63;
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+    text-align: justify;
+}
+
+#mensagem {
+    font-size: 20px;
+    font-style: italic;
+}
+
+#botaoMensagem {
+  background-color: #ccbcb3; 
+  color: black;            
+  padding: 5px 10px;           /* espaço interno */
+  border: 1px solid black;   
+}
+
+#botaoMensagem:active { /*uso de pseudoclasse, nesse caso quando houver o clique no botão*/
+  background-color: #796b63; /* muda a cor ao clicar */
+  transform: translateY(2px);    /* desloca 2px para baixo */
+}
+
+li {
+  margin-bottom: 10px; /* aumento do espaçamento entre itens em 10px */
+  font-size: 19px;
+}
+
+#fotoprincipal { /*estilizando utilizando id, desse jeito eu separo a foto usada por fora da table*/
+    border-radius: 20px; /*arredondamento da borda*/
+    width: 25%;
+
+}
+
+a {
+    color: #998980;
+    font-size: 20px;
+}
+
+a:hover { /*uso de pseudoclasse, nesse caso quando passar o mouse em cima do link*/
+    color: #796b63;         /* cor quando o mouse passa por cima */
+    text-decoration: underline; /* opcional, sublinha ao passar o mouse */
+}
+
+table {
+    width: 38%;
+    border-collapse: collapse;
+    table-layout: fixed; /* colunas iguais */
+    outline: 1px solid black;
+}
+
+/*colunas da tabela abaixo estilizadas separadamente*/
+td {
+    border: solid black;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 22px;
+} 
+
+.tabelafoto {
+    position: relative;
+    width: 100%;
+    object-fit: cover; /*a foto preenche o espaço da tabela*/   
+}
